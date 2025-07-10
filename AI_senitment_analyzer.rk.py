@@ -7,7 +7,7 @@ def analyze_sentiment():
     blob = TextBlob(text)
     polarity = blob.sentiment.polarity
 
-    print("\n🔍 Sentiment Polarity Score:", polarity)
+    print("\n Sentiment Polarity Score:", polarity)
 
     if polarity > 0:
         print("🙂 Positive Sentiment")
