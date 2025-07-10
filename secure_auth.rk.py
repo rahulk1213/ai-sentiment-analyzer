@@ -8,19 +8,19 @@ def register():
     username = input("Enter a username: ")
 
     if username in users:
-        print("⚠️ Username already exists. Try a different one.")
+        print(" Username already exists. Try a different one.")
         return
 
     password = getpass("Enter password: ")
     confirm = getpass("Confirm password: ")
 
     if password != confirm:
-        print("❌ Passwords do not match!")
+        print(" Passwords do not match!")
         return
 
     hashed_password = sha256(password.encode()).hexdigest()
     users[username] = hashed_password
-    print("✅ User registered successfully!")
+    print(" User registered successfully!")
 
 def login():
     print("\n--- User Login ---")
@@ -30,7 +30,7 @@ def login():
     hashed_password = sha256(password.encode()).hexdigest()
 
     if username in users and users[username] == hashed_password:
-        print(f"✅ Login successful! Welcome, {username} 👋")
+        print(f"✅ Login successful! Welcome, {username} ")
     else:
         print("❌ Invalid username or password.")
 
@@ -47,7 +47,7 @@ def main():
         elif choice == '2':
             login()
         elif choice == '3':
-            print("👋 Exiting the program.")
+            print(" Exiting the program.")
             break
         else:
             print("❌ Invalid choice. Please try again.")
