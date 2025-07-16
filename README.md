@@ -1,4 +1,4 @@
-📌 BOTH PROJECTS AI SENTIMENT ANALYZER & SECURITY AUTHENTICATION STYSTEM
+📌 BOTH PROJECTS AIp SENTIMENT ANALYZER & SECURITY AUTHENTICATION STYSTEM
 
 # ai-sentiment-analyzer
 🧠 AI Sentiment Analyzer — Python Project using TextBlob
@@ -54,10 +54,6 @@ Neutral (polarity = 0)
 
 Output is displayed with the polarity score and sentiment label.
 
-📌 Sample Output:
-Input: "I love this beautiful day!"
-Polarity: 0.85
-Sentiment: Positive
 
 
 🔐 Secure Authentication System — Python Project with getpass & hashlib
